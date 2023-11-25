@@ -13,7 +13,6 @@ export function loadHomePage() {
     subtitle.textContent = 'Discover Our Restaurant';
     description.textContent = 'Experience the finest ice creams with a blend of flavors that will leave you craving for more.';
 
-    mainContent.appendChild(sectionImg);
     mainContent.appendChild(subtitle);
     mainContent.appendChild(description);
     content.appendChild(mainContent);

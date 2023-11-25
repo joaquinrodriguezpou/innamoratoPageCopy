@@ -1,7 +1,6 @@
-import { loadMenuPage } from './home.js';
+import { loadHomePage } from './home.js';
 
-const container = document.createElement('div');
-container.id = 'container';
+const container = document.querySelector('.content-container');
 
 const navBtns = document.querySelector('.nav-btns');
 const homeBtn = document.createElement('button');
@@ -14,3 +13,15 @@ contactBtn.textContent = 'Contact';
 navBtns.appendChild(homeBtn);
 navBtns.appendChild(menuBtn);
 navBtns.appendChild(contactBtn);
+
+function handleBtnClick(loader){
+    const { content } = loader;
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+    container.appendChild(content);
+}
+
+handleBtnClick(loadHomePage());
+
+homeBtn.addEventListener('click', () => handleBtnClick(loadHomePage()));
