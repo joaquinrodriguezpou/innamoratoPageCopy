@@ -1,4 +1,4 @@
-import { loadMenuPage } from './menu.js';
+import { loadMenuPage } from './home.js';
 
 const container = document.createElement('div');
 container.id = 'container';
