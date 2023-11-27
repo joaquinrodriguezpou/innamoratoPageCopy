@@ -1,4 +1,7 @@
-import alfajor from '../dist/images/alfajor-inn.jpg';
+import alfajor from '../dist/images/alfajor-inn.png';
+import americanPop from '../dist/images/american-pop.png';
+import bananaSplit from '../dist/images/banana-split.png';
+import chocolateNuts from '../dist/images/chocolate-nuts.png';
 
 function createFlavor(title, iceCreamImg){
     const flavor = document.createElement('div');
@@ -11,9 +14,7 @@ function createFlavor(title, iceCreamImg){
     flavor.appendChild(flavorTitle);
     flavor.appendChild(image);
 
-    return {
-        flavorContainer,
-    }
+    return flavor;
 }
 
 export function loadMenuPage() {
@@ -27,15 +28,26 @@ export function loadMenuPage() {
     subtitle.textContent = 'flavors';
     flavorsContainer.classList.add('flavors-container');
 
+    flavorsContainer.appendChild(createFlavor('alfajor innamorato', alfajor)); 
+    flavorsContainer.appendChild(createFlavor('american pop', americanPop));
+    flavorsContainer.appendChild(createFlavor('banana split', bananaSplit));
+    flavorsContainer.appendChild(createFlavor('chocolate whit nuts', chocolateNuts));
+    flavorsContainer.appendChild(createFlavor('alfajor innamorato', alfajor)); 
+    flavorsContainer.appendChild(createFlavor('american pop', americanPop));
+    flavorsContainer.appendChild(createFlavor('banana split', bananaSplit));
+    flavorsContainer.appendChild(createFlavor('chocolate whit nuts', chocolateNuts));
+    flavorsContainer.appendChild(createFlavor('alfajor innamorato', alfajor)); 
+    flavorsContainer.appendChild(createFlavor('american pop', americanPop));
+    flavorsContainer.appendChild(createFlavor('banana split', bananaSplit));
+    flavorsContainer.appendChild(createFlavor('chocolate whit nuts', chocolateNuts));
+    flavorsContainer.appendChild(createFlavor('alfajor innamorato', alfajor)); 
+    flavorsContainer.appendChild(createFlavor('american pop', americanPop));
+    flavorsContainer.appendChild(createFlavor('banana split', bananaSplit));
+    // content.appendChild(createFlavor());
+    
     content.appendChild(title);
     content.appendChild(subtitle);
-    content.appendChild(createFlavor('alfajor innamorato', alfajor));   
-    // content.appendChild(createFlavor());
-    // content.appendChild(createFlavor());
-    // content.appendChild(createFlavor());
-    // content.appendChild(createFlavor());
-
-    content.appendChild(mainContent);
+    content.appendChild(flavorsContainer); 
 
     return {
         content,

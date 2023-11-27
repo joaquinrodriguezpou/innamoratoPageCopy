@@ -1,4 +1,5 @@
 import { loadHomePage } from './home.js';
+import { loadMenuPage } from './menu.js';
 
 const container = document.querySelector('.content-container');
 
@@ -22,6 +23,8 @@ function handleBtnClick(loader){
     container.appendChild(content);
 }
 
-handleBtnClick(loadHomePage());
+handleBtnClick(loadMenuPage());
 
 homeBtn.addEventListener('click', () => handleBtnClick(loadHomePage()));
+menuBtn.addEventListener('click', () => handleBtnClick(loadMenuPage()));
+
