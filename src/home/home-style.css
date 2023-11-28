@@ -1,0 +1,13 @@
+.home-content {
+    background-color: rgb(1, 1, 1);
+    color: white;
+    border-radius: 10px;
+    background-image: url('../../dist/images/alfajor-inn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* i dont know why it doesnt work */
+}
+
+.home-content img {
+    border-radius: 10px;
+}

@@ -1,0 +1,22 @@
+.contact-content {
+    background-color: rgb(249, 249, 249);
+    color: black;
+    border-radius: 10px;
+    background-image: url('../../dist/images/alfajor-inn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* i dont know why it doesnt work */
+}
+
+.phone-num, .address {
+    display: flex;
+    gap: 1rem;
+}
+
+.phone-num img, .address img{
+    width: 20px;
+}
+
+.contact-content img {
+    border-radius: 10px;
+}

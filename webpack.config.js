@@ -14,19 +14,21 @@ module.exports = {
       },
     module: {
     rules: [
-        // Otras reglas...
-
         {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
-        use: [
-            {
-            loader: 'file-loader',
-            options: {
-                outputPath: 'images', // Carpeta de salida para las imágenes
+            test: /\.(png|jpg|jpeg|gif|svg)$/i,
+            use: [
+                {
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'images', 
+                },
+                },
+            ],
             },
+        {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader'],
             },
-        ],
-        },
     ],
     },
 }

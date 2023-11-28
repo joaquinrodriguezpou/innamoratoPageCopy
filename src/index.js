@@ -1,5 +1,6 @@
-import { loadHomePage } from './home.js';
-import { loadMenuPage } from './menu.js';
+import { loadHomePage } from './home/home.js';
+import { loadMenuPage } from './menu/menu.js';
+import { loadContactPage } from './contact/contact.js';
 
 const container = document.querySelector('.content-container');
 
@@ -27,4 +28,4 @@ handleBtnClick(loadMenuPage());
 
 homeBtn.addEventListener('click', () => handleBtnClick(loadHomePage()));
 menuBtn.addEventListener('click', () => handleBtnClick(loadMenuPage()));
-
+contactBtn.addEventListener('click', () => handleBtnClick(loadContactPage()));
